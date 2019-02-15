@@ -281,7 +281,7 @@ def _main():
             if "port" in smtp_config:
                 opts.smtp_port = smtp_config["port"]
             if "ssl" in smtp_config:
-                opts.smtp_ssl = smtp_config.getboolean("ssl")
+                opts.smtp_ssl = smtp_config["ssl"].getboolean()
             if "user" in smtp_config:
                 opts.smtp_user = smtp_config["user"]
             if "password" in smtp_config:
